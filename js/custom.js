@@ -303,7 +303,7 @@
 	});
 	
 	// CountDown Js
-	var deadline = 'December 1 2020 11:59:00 GMT-0400';
+	var deadline = 'December 4 2020 13:00:00 GMT-0400';
 		function time_remaining(endtime){
 			var t = Date.parse(endtime) - Date.parse(new Date());
 			var seconds = Math.floor( (t/1000) % 60 );
