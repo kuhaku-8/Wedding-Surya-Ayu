@@ -51,11 +51,10 @@
 					<!-- LAYERS -->
 
 					<!-- BACKGROUND VIDEO LAYER -->
-					<div class="rs-background-video-layer" data-videowidth="100%" data-videoheight="100%"
-						data-videomp4="images/header/video.mp4" data-forceCover="1" data-aspectratio="16:9"
-						data-autoplay="true" data-autoplayonlyfirsttime="false" data-videopreload="auto"
-						data-volume="100" data-forcerewind="on" data-nextslideatend="true"
-						data-videoloop="loopandnoslidestop"></div>
+					<div class="rs-background-video-layer" data-forcerewind="on" data-videowidth="100%"
+						data-videoheight="100%" data-videomp4="images/header/video.mp4" data-videopreload="auto"
+						data-videoloop="loop" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true"
+						data-autoplayonlyfirsttime="false"></div>
 
 					<div class="tp-caption tp-resizeme" id="slide-2800-layer-2" data-x="center" data-hoffset=""
 						data-y="center" data-voffset="120" data-width="['auto']" data-height="['auto']" data-type="text"
@@ -238,7 +237,7 @@
 									<img src="images/content/story_1.jpeg" alt="Story">
 								</div>
 								<div class="wd_story_covers_box_datails">
-									<span>3rd December 2015</span>
+									<span>3<sup>rd</sup> December 2015</span>
 									<h1>Our First Met</h1>
 									<span>That day changed Life</span>
 									<p>I would never forget the smile on your face that day. It was obvious that I was hitting on you.</p>
@@ -247,7 +246,7 @@
 							<div class="wd_story_covers_box_right">
 								<div class="wd_story_dot"><span></span></div>
 								<div class="wd_story_covers_box_datails">
-									<span>20th December 2015</span>
+									<span>20<sup>th</sup> December 2015</span>
 									<h1>Our First Dating</h1>
 									<span>You'd be kinda hard to forget</span>
 									<p>It was wonderful trip for us. I never would have thought that the day we met each other was the best day of my entire life.</p>
@@ -262,7 +261,7 @@
 									<img src="images/content/story_3.jpeg" alt="Story">
 								</div>
 								<div class="wd_story_covers_box_datails">
-									<span>2nd January 2016</span>
+									<span>2<sup>nd</sup> January 2016</span>
 									<h1>Our First Kiss</h1>
 									<span>Feeling awesome and crazy</span>
 									<p>Likes our wings more strength to fly highest beyond this world.</p>
@@ -271,7 +270,7 @@
 							<div class="wd_story_covers_box_right">
 								<div class="wd_story_dot"><span></span></div>
 								<div class="wd_story_covers_box_datails">
-									<span>27th November 2020</span>
+									<span>27<sup>th</sup> November 2020</span>
 									<h1>How he Proposed</h1>
 									<span>Said a promise to love every single day of forever.</span>
 									<p>You are everything I have never thought you would be and I am so happy for it.</p>
@@ -286,7 +285,7 @@
 									<img src="images/content/story_5.jpg" alt="Story">
 								</div>
 								<div class="wd_story_covers_box_datails">
-									<span>4th December 2020</span>
+									<span>4<sup>th</sup> December 2020</span>
 									<h1>Now We Together</h1>
 									<span>we are trying to do our best</span>
 									<p>A best friend is like a rare diamond. It's hard to find and lucky to have. That is you half of me ♥️</p>
@@ -644,6 +643,7 @@
 			measurementId: "G-YV93R0DQTF"
 		};
 		var fb = firebase.initializeApp(firebaseConfig).firestore();
+
 		function sendMessage() {
 			var name = $("#name").val().trim();
 			var message = $("#message").val().trim();
@@ -665,6 +665,9 @@
 			}
 		}
 	</script>
+	<a href="javascript:void(0);" id="music-btn" class="music-btn">
+		<i class="fa fa-music my-float"></i>
+	</a>
 	<a href="pesanuntukku" class="act-btn">
 		<i class="fa fa-envelope my-float"></i>
 	</a>

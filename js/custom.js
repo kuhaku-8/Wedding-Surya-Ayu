@@ -421,4 +421,21 @@ jsFileLocation:"revolution/js/",
 			});	/*ready*/
 	
 	});
+
+	function playingMusic(){
+		var button = document.getElementById("music-btn");
+		var music = new Audio();
+		music.src = "images/header/audio.mp3";
+		music.loop = true;
+		
+		function playPause(){
+			if(music.paused){
+				music.play();
+			} else {
+				music.pause();
+			}
+		}
+		button.addEventListener("click",playPause);
+	}
+	window.addEventListener("load", playingMusic);
 })(); 
