@@ -649,8 +649,10 @@
 			var message = $("#message").val().trim();
 			if (name === "") {
 				alert("Namanya harus diisi ya 😉");
+				$("#name").val('');
 			} else if (message === "") {
 				alert("Pesannya wajib diisi ya 😉");
+				$("#message").val('');
 			} else {
 				fb.collection('message').add({
 					name: name,
